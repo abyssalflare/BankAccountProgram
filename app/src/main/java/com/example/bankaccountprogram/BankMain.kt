@@ -11,5 +11,13 @@ fun main()
     jerylsBankAccount.withdraw(4430.00);
 
     jerylsBankAccount.displayTransactionHistory();
-    println("Account Balance: ${jerylsBankAccount.balance}");
+    println("Account Balance: ${jerylsBankAccount.AccountBalance()}");
+
+    val rinsBankAccount = BankAccount("Rin Clairvoyl", 0.0);
+    rinsBankAccount.deposit(100.0);
+    rinsBankAccount.withdraw(10.0);
+    rinsBankAccount.deposit(300.0);
+
+    rinsBankAccount.displayTransactionHistory();
+    println("Account Balance: ${rinsBankAccount.AccountBalance()}");
 }

@@ -1,6 +1,6 @@
 package com.example.bankaccountprogram
 
-class BankAccount(var accountHolder: String, var balance: Double) {
+class BankAccount(var accountHolder: String, private var balance: Double) {
 
     private val transactionHistory = mutableListOf<String>();
 
@@ -31,4 +31,10 @@ class BankAccount(var accountHolder: String, var balance: Double) {
             println(transaction);
         }
     }
+
+    fun AccountBalance() : Double
+    {
+        return balance;
+    }
+
 }
